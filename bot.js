@@ -30,7 +30,7 @@ client.on('message', message => {
 
 if (message.content.startsWith(prefix + 'setname')) {
   client.user.setUsername(argresult).then
-      message.channel.sendMessage(`Username Changed To **${argresult}**`)
+      message.channel.sendMessage(`:white_check_mark`)
   return message.reply("You Can change the username 2 times per hour");
 } 
 
